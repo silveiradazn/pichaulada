@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre Nós</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #1e1e1e;
+      color: #fff;
+    }
+
+    header {
+      background-color: #2d2d2d;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      color: #f44336;
+      margin: 0;
+    }
+
+    .home-button {
+      background-color: #f44336;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    .home-button:hover {
+      background-color: #d32f2f;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 20px;
+    }
+
+    .about-section {
+      background-color: #2d2d2d;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .about-section h2 {
+      color: #f44336;
+      border-bottom: 2px solid #f44336;
+      padding-bottom: 10px;
+    }
+
+    .about-section p {
+      line-height: 1.8;
+    }
+
+    .info-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .info-section .info-box {
+      background-color: #2d2d2d;
+      padding: 20px;
+      border-radius: 8px;
+      flex: 1 1 calc(50% - 20px);
+      min-width: 300px;
+    }
+
+    .info-box h3 {
+      color: #f44336;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background-color: #2d2d2d;
+      padding: 20px;
+      text-align: center;
+    }
+
+    footer p {
+      margin: 0;
+      color: #aaa;
+      font-size: 14px;
+    }
+
+    .contact-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .contact-box {
+      background-color: #f44336;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-align: center;
+      min-width: 200px;
+    }
+
+    .contact-box h4 {
+      margin: 0;
+    }
+
+    a {
+      color: #f44336;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Sobre Nós</h1>
+  <a href="index.html" class="home-button">Voltar para Home</a>
+</header>
+
+<div class="container">
+  <div class="about-section">
+    <h2>Quem Somos</h2>
+    <p>
+      Fundada em 2007, nossa empresa trabalha com os mais variados produtos,
+      atuando principalmente no setor de informática e equipamentos eletrônicos.
+      Priorizamos qualidade, eficiência e a satisfação de nossos clientes.
+    </p>
+    <p>
+      Oferecemos uma loja virtual completa e uma loja física em Joinville/SC,
+      que atendem às necessidades dos clientes mais exigentes.
+    </p>
+  </div>
+
+  <div class="info-section">
+    <div class="info-box">
+      <h3>Dados Cadastrais</h3>
+      <p><strong>Razão Social:</strong> Nossa Empresa LTDA</p>
+      <p><strong>CNPJ:</strong> 00.000.000/0001-00</p>
+      <p><strong>Inscrição Estadual:</strong> 123456789</p>
+    </div>
+    <div class="info-box">
+      <h3>Matriz - Joinville/SC</h3>
+      <p>Avenida Central, 1234</p>
+      <p>Bairro Centro - CEP: 89000-000</p>
+      <p><strong>Horário de Atendimento:</strong></p>
+      <p>Segunda a Sexta: 8h às 18h</p>
+    </div>
+    <div class="info-box">
+      <h3>Filial - Joinville/SC</h3>
+      <p>Rua Secundária, 567</p>
+      <p>Bairro América - CEP: 89000-001</p>
+      <p><strong>Horário de Atendimento:</strong></p>
+      <p>Segunda a Sexta: 9h às 19h</p>
+      <p>Sábado: 9h às 13h</p>
+    </div>
+    <div class="info-box">
+      <h3>Contato</h3>
+      <p>Email: contato@nossaempresa.com.br</p>
+      <p>Telefone: (47) 1234-5678</p>
+    </div>
+  </div>
+
+  <div class="contact-section">
+    <div class="contact-box">
+      <h4>Atendimento Loja Virtual</h4>
+      <p>8h às 18h</p>
+    </div>
+    <div class="contact-box">
+      <h4>Atendimento Loja Física</h4>
+      <p>9h às 19h</p>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>© 2024 Nossa Empresa. Todos os direitos reservados.</p>
+  <p><a href="#">Política de Privacidade</a></p>
+</footer>
+
+<div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+</body> 
+</html>

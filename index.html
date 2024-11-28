@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Friday - Promoções Imperdíveis!</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #121212;
+            color: #ff0000;
+        }
+
+        header {
+            background-color: #000;
+            color: #ff0000;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header img {
+            max-width: 150px; /* Ajuste o tamanho da logo conforme necessário */
+            margin-bottom: 10px;
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #1a1a1a;
+            padding: 15px 0;
+        }
+
+        nav a {
+            color: #ff0000;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffffff;
+        }
+
+        .home-banner {
+            background-image: url("https://media.pichau.com.br/media/aw_rbslider/slides/2024_-_28_nov_a_01_dez_BlackFriday_1920x450.webp"); 
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            color: #ff0000;
+            padding: 80px 20px;
+        }
+
+        .home-banner h2 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        .home-banner p {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+        }
+
+        .home-banner .button {
+            background-color: #ff0000;
+            color: #ffffff;
+            padding: 15px 40px;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+        }
+
+        .home-banner .button:hover {
+            background-color: #ffffff;
+            color: #ff0000;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        .product {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .product-item {
+            background-color: #1a1a1a;
+            border: 1px solid #ff0000;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            flex: 1 1 calc(33.333% - 20px);
+            max-width: calc(33.333% - 20px);
+            transition: transform 0.3s ease;
+        }
+
+        .product-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        .product-item img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .product-item h3 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            color: #ffffff;
+        }
+
+        .product-item p {
+            font-size: 1rem;
+            margin-bottom: 15px;
+            color: #dddddd;
+        }
+
+        .product-item .price {
+            font-size: 1.5rem;
+            color: #ff0000;
+            margin-bottom: 15px;
+        }
+
+        .product-item .button {
+            background-color: #ff0000;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            text-transform: uppercase;
+            transition: background-color 0.3s;
+        }
+
+        .product-item .button:hover {
+            background-color: #ffffff;
+            color: #ff0000;
+        }
+
+        footer {
+            background-color: #000;
+            color: #ff0000;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer p {
+            font-size: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .product-item {
+                flex: 1 1 calc(50% - 20px);
+                max-width: calc(50% - 20px);
+            }
+
+            .home-banner h2 {
+                font-size: 2.5rem;
+            }
+
+            .home-banner p {
+                font-size: 1.2rem;
+            }
+
+            nav a {
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .product-item {
+                flex: 1 1 100%;
+                max-width: 100%;
+            }
+
+            .home-banner h2 {
+                font-size: 2rem;
+            }
+
+            .home-banner p {
+                font-size: 1rem;
+            }
+
+            nav a {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="pichau.png" alt="Logo da Empresa"> 
+        <h1>PICHAULADA- Promoções Imperdíveis!</h1>
+        <p>Os melhores descontos que você já viu!</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="produtos.html">Produtos</a>
+        <a href="sobre.html">Sobre Nós</a>
+        <a href="contato.html">Contato</a>
+    </nav>
+
+    <div class="home-banner">
+        <h2>Descontos de até 70%!</h2>
+        <p>Confira nossas ofertas exclusivas para a Black Friday.</p>
+        <button class="button">Aproveitar Agora</button>
+    </div>
+
+    <div class="container" id="produtos">
+        <h2>Produtos em Destaque</h2>
+        <div class="product">
+            <div class="product-item">
+                <img src="https://static.wixstatic.com/media/1d9c31_f9d3d7bf8fc34e04a1d52fcd7999c742~mv2.png/v1/fill/w_700,h_922,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/1d9c31_f9d3d7bf8fc34e04a1d52fcd7999c742~mv2.png" alt="PC Gamer Xtreme">
+                <h3>PC Gamer Xtreme</h3>
+                <p>Potência e desempenho para gamers exigentes.</p>
+                <p class="price">R$ 5.999,99</p>
+                <button class="button">Comprar Agora</button>
+            </div>
+            <div class="product-item">
+                <img src="pc-removebg-preview.png" alt="PC Gamer Ultra">
+                <h3>PC Gamer Ultra</h3>
+                <p>Velocidade e gráficos impressionantes.</p>
+                <p class="price">R$ 4.799,99</p>
+                <button class="button">Comprar Agora</button>
+            </div>
+            <div class="product-item">
+                <img src="1xg-Photoroom.png" alt="PC Gamer Compact">
+                <h3>PC Gamer Compact</h3>
+                <p>Design compacto e poderoso.</p>
+                <p class="price">R$ 3.499,99</p>
+                <button class="button">Comprar Agora</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Black Friday. Todos os direitos reservados.</p>
+    </footer>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+    </body> 
+</body> 
+</html>

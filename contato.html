@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atendimento ao Cliente</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #1e1e1e;
+      color: #fff;
+    }
+
+    header {
+      background-color: #2d2d2d;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      color: #f44336;
+      margin: 0;
+    }
+
+    .home-button {
+      background-color: #f44336;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    .home-button:hover {
+      background-color: #d32f2f;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 20px;
+    }
+
+    .ticket-section {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .ticket-button {
+      display: inline-block;
+      background-color: #f44336;
+      color: #fff;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 8px;
+      font-size: 18px;
+      cursor: pointer;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .ticket-button:hover {
+      background-color: #d32f2f;
+    }
+
+    .faq-section h2, .services-section h2 {
+      color: #fff;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #f44336;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    .faq-list, .services-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .faq-item, .service-item {
+      margin-bottom: 10px;
+    }
+
+    .faq-button, .service-button {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #f44336;
+      color: #fff;
+      border: none;
+      padding: 15px 20px;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      width: 100%;
+      transition: background-color 0.3s;
+      text-align: left;
+    }
+
+    .faq-button:hover, .service-button:hover {
+      background-color: #d32f2f;
+    }
+
+    .faq-button span, .service-button span {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    footer {
+      background-color: #2d2d2d;
+      padding: 10px;
+      text-align: center;
+      color: #aaa;
+      font-size: 14px;
+    }
+
+    footer a {
+      color: #f44336;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Atendimento ao Cliente</h1>
+  <a href="index.html" class="home-button">Voltar para Home</a>
+</header>
+
+<div class="container">
+  <!-- Seção para abrir um ticket -->
+  <div class="ticket-section">
+    <a href="#" class="ticket-button">ABRA UM TICKET</a>
+  </div>
+
+  <!-- Dúvidas Frequentes -->
+  <div class="faq-section">
+    <h2>Dúvidas frequentes</h2>
+    <ul class="faq-list">
+      <li class="faq-item">
+        <button class="faq-button">
+          DÚVIDA SOBRE CADASTRO <span>›</span>
+        </button>
+      </li>
+      <li class="faq-item">
+        <button class="faq-button">
+          DÚVIDA SOBRE PAGAMENTO <span>›</span>
+        </button>
+      </li>
+      <li class="faq-item">
+        <button class="faq-button">
+          DÚVIDA SOBRE ENTREGA <span>›</span>
+        </button>
+      </li>
+      <li class="faq-item">
+        <button class="faq-button">
+          DÚVIDAS SOBRE TROCA E DEVOLUÇÃO <span>›</span>
+        </button>
+      </li>
+      <li class="faq-item">
+        <button class="faq-button">
+          GARANTIA PICHÃO GAMING <span>›</span>
+        </button>
+      </li>
+      <li class="faq-item">
+        <button class="faq-button">
+          CONTATOS DOS FABRICANTES <span>›</span>
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Serviços mais buscados -->
+  <div class="services-section">
+    <h2>Serviços mais buscados</h2>
+    <ul class="services-list">
+      <li class="service-item">
+        <button class="service-button">
+          DÚVIDA SOBRE O PEDIDO <span>›</span>
+        </button>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<footer>
+  <p>© 2024 Nossa Empresa. Todos os direitos reservados.</p>
+  <p><a href="#">Política de Privacidade</a></p>
+</footer>
+
+<div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+</body> 
+</html>
